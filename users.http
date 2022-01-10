@@ -1,0 +1,47 @@
+
+
+
+http://localhost:3000/users/
+
+
+
+###
+
+//api..1...
+
+post http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "dam_richard",
+  "name": "Adam Richard",
+  "password": "richt",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+###
+
+//api.....2......
+
+
+post http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "dam_richard",
+  "password": "richard"
+}
+
+####
+
+//api.....3.....
+
+put http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "richdfgsdrgedr"
+}
